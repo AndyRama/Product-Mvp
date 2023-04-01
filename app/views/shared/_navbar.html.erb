@@ -7,7 +7,7 @@
     <div class="d-flex align-items-center justify-content-between">
       <%= link_to "Home", "#", class: "navbar-perso-item navbar-perso-link" %>
       <%= link_to "About me", "/", class: "navbar-perso-item navbar-perso-link" %>
-      <%= link_to "Contact", "/", class: "navbar-perso-item navbar-perso-link" %>
+      <%#= link_to "Contact", "/", class: "navbar-perso-item navbar-perso-link" %>
       <%= link_to "Write", "/", class: "navbar-perso-item navbar-perso-link" %>
       <% if user_signed_in? %>
         <%= link_to t(".sign_out", default: "Log out"), destroy_user_session_path, method: :delete , class: "navbar-perso-item navbar-perso-link"%>
