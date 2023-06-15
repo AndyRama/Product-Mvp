@@ -5,29 +5,20 @@
   </a>
   <div class="d-none d-md-block">
     <div class="d-flex align-items-center justify-content-between">
-      <%= link_to "Home", "#", class: "navbar-perso-item navbar-perso-link" %>
-      <%= link_to "About me", "/", class: "navbar-perso-item navbar-perso-link" %>
+      <%#= link_to "Home", "#", class: "navbar-perso-item navbar-perso-link" %>
+      <%#= link_to "About me", "/", class: "navbar-perso-item navbar-perso-link" %>
       <%#= link_to "Contact", "/", class: "navbar-perso-item navbar-perso-link" %>
-      <%= link_to "Write", "/", class: "navbar-perso-item navbar-perso-link" %>
-      <% if user_signed_in? %>
-        <%= link_to t(".sign_out", default: "Log out"), destroy_user_session_path, method: :delete , class: "navbar-perso-item navbar-perso-link"%>
-        <%= image_tag "https://kitt.lewagon.com/placeholder/users/sarahlafer", class: "avatar-large", alt: "avatar-large" %>
-      <% else %>
-        <%= link_to t(".sign_in", default: "Login"), new_user_session_path , class: "navbar-perso-item navbar-perso-link"%>
-      <% end %>
+      <%#= link_to "Write", "/", class: "navbar-perso-item navbar-perso-link" %>
+      <%# if user_signed_in? %>
+        <%#= link_to t(".sign_out", default: "Log out"), destroy_user_session_path, method: :delete , class: "navbar-perso-item navbar-perso-link"%>
+        <%#= image_tag "https://kitt.lewagon.com/placeholder/users/sarahlafer", class: "avatar-large", alt: "avatar-large" %>
+      <%#else %>
+        <%#= link_to t(".sign_in", default: "Login"), new_user_session_path , class: "navbar-perso-item navbar-perso-link"%>
+      <%# end %>
     </div>
   </div>
-  
-  <%= simple_form_for :search, url: root_path, method: :get do |f| %>
-    <div class="search-form-control form-group">
-      <input class="form-control string required" type="text" name="search[query]" id="search_query" />
-      <button name="button" type="submit" class="btn btn-flat">
-        <i class="fas fa-search"></i> Search
-      </button>
-    </div>
-  <% end %>
 
-  <div class="d-block d-md-none">
+  <div class="d-block ">
     <div class="navbar-dropdown">
       <input id="toggle" type="checkbox"/>
       <label class="hamburger" for="toggle">
