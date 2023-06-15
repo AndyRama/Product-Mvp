@@ -65,6 +65,8 @@ group :development, :test do
   gem "debug", platforms: %i[mri mingw x64_mingw]
   gem "dotenv-rails"
   gem "rspec-rails"
+  gem 'guard-rspec', require: false
+  gem 'factory_bot_rails'
 end
 
 group :development do
